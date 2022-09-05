@@ -48,7 +48,7 @@ const Home = () => {
 				flexShrink={0} 
 				mt={{	base: 4, md: 0	}} 
 				ml={{	md:	6	}} 
-				TextAlign="center">
+				textAlign="center">
 				<Box 
 					borderColor="whiteAlpha.800" 
 					borderWidth={2} 
