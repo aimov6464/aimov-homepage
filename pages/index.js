@@ -8,18 +8,24 @@ import  {
 	List,
 	ListItem,
 	useColorModeValue, 
-	Button } from '@chakra-ui/react'
+	Button, 
+	chakra} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-
+import Image from 'next/image'
 import {
 	IoLogoInstagram,
 	IoLogoGithub
 } from 'react-icons/io5'
 
-const Page = () => {
+const ProfileImage = chakra(Image, {
+	shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
+
+
+const Home = () => {
 	return (
 		<Container>
 		<Box 
@@ -44,15 +50,25 @@ const Page = () => {
 				mt={{	base: 4, md: 0	}} 
 				ml={{	md:	6	}} 
 				align="center">
-				<Image 
+				<Box 
 					borderColor="whiteAlpha.800" 
 					borderWidth={2} 
 					borderStyle="solid" 
-					maxWidth="100px" 
+					w="100px" 
+					h="100px"
 					display="inline-block" 
 					borderRadius="full" 
-					src="/images/raim.jpg" 
-					alt="Profile Image"/>
+					overflow="hidden"
+					>
+
+						<ProfileImage
+						src="/images/raim.jpg" 
+						alt="Profile Image"
+						borderRadius="full"
+						width="100%"
+						height="100%"
+						/>
+				</Box>
 			</Box>
 		</Box>
 
@@ -146,4 +162,4 @@ const Page = () => {
 	)
 }
 
-export default Page
+export default Home
