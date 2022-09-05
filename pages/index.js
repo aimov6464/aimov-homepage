@@ -4,7 +4,6 @@ import  {
 	Container, 
 	Box, 
 	Heading,
-	Image, 
 	List,
 	ListItem,
 	useColorModeValue, 
