@@ -23,9 +23,7 @@ const ProfileImage = chakra(Image, {
 	shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-
-const Home = () => {
-	return (
+const Home = () =>  (
 		<Container>
 		<Box 
 			borderRadius="lg" 
@@ -46,20 +44,19 @@ const Home = () => {
 			</Box>
 			<Box 
 				flexShrink={0} 
-				mt={{	base: 4, md: 0	}} 
-				ml={{	md:	6	}} 
-				align="center">
+				mt={{ base: 4, md: 0 }} 
+				ml={{ md: 6	}} 
+				textAlign="center">
 				<Box 
-					borderColor="whiteAlpha.800" 
-					borderWidth={2} 
-					borderStyle="solid" 
-					w="100px" 
+					borderColor="whiteAlpha.800"
+					borderWidth={2}
+					borderStyle="solid"
+					w="100px"
 					h="100px"
-					display="inline-block" 
-					borderRadius="full" 
+					display="inline-block"
+					borderRadius="full"
 					overflow="hidden"
 					>
-
 						<ProfileImage
 						src="/images/raim.jpg" 
 						alt="Profile Image"
@@ -159,6 +156,6 @@ const Home = () => {
 
 		</Container>
 	)
-}
+
 
 export default Home
