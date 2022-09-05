@@ -24,7 +24,7 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => {
-	const image = (`/images/footprint.png`)
+	const image = (`/images/photo.png`)
 	return (
 		<Container>
 		<Box 
