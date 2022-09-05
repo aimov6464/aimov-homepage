@@ -16,8 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 
 import {
 	IoLogoInstagram,
-	IoLogoGithub,
-	IoLogoDiscord
+	IoLogoGithub
 } from 'react-icons/io5'
 
 const Page = () => {
