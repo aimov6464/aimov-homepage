@@ -24,7 +24,7 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => {
-	const raimImage = `/images/raim.jpg`
+	const image = ('/images/raim.jpg')
 	return (
 		<Container>
 		<Box 
@@ -61,7 +61,7 @@ const Home = () => {
 					>
 
 						<ProfileImage
-						src={raimImage} 
+						src={image} 
 						alt="Profile Image"
 						borderRadius="full"
 						width="100%"
