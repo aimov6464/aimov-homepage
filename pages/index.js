@@ -63,7 +63,7 @@ const Page = () => {
 			<Paragraph>
 				Raim is a software engineer based in Kazakhstan. 
 				Focused on building highly scalable and maintainable backend systems. 
-				when not online he loves hiking across beutifull Kazakh's mountains.
+				when not online he loves hiking across beutifull Kazakh&apos;s mountains.
 			</Paragraph>
 			<Box align="center" my={4}>
 				<NextLink href="/works" passHref scroll={false}>
@@ -84,7 +84,7 @@ const Page = () => {
 				</BioSection>
 				<BioSection>
 					<BioYear>2015-2019</BioYear>
-					Bachelor's degree in Computer Science 
+					Bachelor&apos;s degree in Computer Science 
 					at Laurentian University, Sudbury, ON, Canada
 				</BioSection>
 				<BioSection>
