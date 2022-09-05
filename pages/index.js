@@ -58,7 +58,7 @@ const Home = () =>  (
 					overflow="hidden"
 					>
 						<ProfileImage
-						src="/images/raim.jpg" 
+						src="/images/raim-photo.png" 
 						alt="Profile Image"
 						borderRadius="full"
 						width="100%"
